@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+const API_URL = "https://eco-nexus-ai-qt9c.vercel.app";
 
-const API_URL = "http://127.0.0.1:8000";
 
 const facilityDefaults = {
   food: "GreenCompost",
@@ -41,7 +41,7 @@ function App() {
   try {
     setFacilityLoading(true);
 
-    const response = await fetch("http://127.0.0.1:8000/facilities");
+    const response = await fetch(`${API_URL}/facilities`);
 
     const data = await response.json();
 
