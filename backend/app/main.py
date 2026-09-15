@@ -38,9 +38,7 @@ class WasteInput(BaseModel):
     actual_destination: str
 
 
-class CapacityUpdate(BaseModel):
-    facility_name: str
-    used_capacity: float
+
 
 
 class StatusUpdate(BaseModel):
@@ -154,15 +152,7 @@ def get_facilities():
 # UPDATE FACILITY CAPACITY
 # ============================================================
 
-@app.post("/facility/update-capacity")
-def update_facility_capacity(data: CapacityUpdate):
 
-    result = facility_agent.update_capacity(
-        facility_name=data.facility_name,
-        used_capacity=data.used_capacity
-    )
-
-    return result
 
 
 # ============================================================
