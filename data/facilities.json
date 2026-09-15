@@ -1,0 +1,68 @@
+[
+    {
+        "name": "GreenCompost",
+        "waste_type": "organic",
+        "accepted_processes": [
+            "Composting"
+        ],
+        "capacity": 500,
+        "status": "available"
+    },
+    {
+        "name": "BioEnergy",
+        "waste_type": "organic",
+        "accepted_processes": [
+            "Anaerobic Digestion",
+            "Waste-to-Energy"
+        ],
+        "capacity": 700,
+        "status": "maintenance"
+    },
+    {
+        "name": "PlasticRecycle",
+        "waste_type": "plastic",
+        "accepted_processes": [
+            "Plastic Recycling"
+        ],
+        "capacity": 600,
+        "status": "maintenance"
+    },
+    {
+        "name": "PaperRecycle",
+        "waste_type": "paper",
+        "accepted_processes": [
+            "Paper Recycling"
+        ],
+        "capacity": 500,
+        "status": "maintenance"
+    },
+    {
+        "name": "MaterialRecovery",
+        "waste_type": "metal_glass",
+        "accepted_processes": [
+            "Material Recovery",
+            "Recycling"
+        ],
+        "capacity": 400,
+        "status": "maintenance"
+    },
+    {
+        "name": "EWasteFacility",
+        "waste_type": "e-waste",
+        "accepted_processes": [
+            "Authorized E-Waste Recycling",
+            "Specialized Recovery"
+        ],
+        "capacity": 300,
+        "status": "maintenance"
+    },
+    {
+        "name": "WasteEnergy",
+        "waste_type": "residual",
+        "accepted_processes": [
+            "Waste-to-Energy"
+        ],
+        "capacity": 1000,
+        "status": "maintenance"
+    }
+]
