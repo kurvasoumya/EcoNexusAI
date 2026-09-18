@@ -86,7 +86,7 @@ class FacilityAgent:
                 "status": "available"
             }
         ]
-        self._load_state()
+      
     # ========================================================
     # LOAD / SAVE FACILITY STATE
     # ========================================================
@@ -95,7 +95,7 @@ class FacilityAgent:
 
         if not self.data_file.exists():
 
-            self._save_state()
+            
 
             return
 
@@ -118,8 +118,7 @@ class FacilityAgent:
             OSError
         ):
 
-            self._save_state()
-
+            
 
     def _save_state(self):
 
@@ -304,7 +303,7 @@ class FacilityAgent:
                     elif facility["status"] == "full":
                         facility["status"] = "available"
 
-                    self._save_state()
+                    
 
                 return {
                     "status": "updated",
