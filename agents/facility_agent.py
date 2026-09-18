@@ -258,7 +258,7 @@ class FacilityAgent:
 
                     facility["status"] = "full"
 
-                self._save_state()
+                
                 return {
 
                     "status": "updated",
@@ -351,9 +351,7 @@ class FacilityAgent:
                 == facility_name.lower()
             ):
 
-                facility["status"] = new_status.lower()
-
-                self._save_state()
+               facility["status"] = new_status.lower()
 
                 return {
 
