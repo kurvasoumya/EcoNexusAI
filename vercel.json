@@ -1,10 +1,7 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/index.py": {
-      "includeFiles": [
-        "data/facilities.json"
-      ]
+      "includeFiles": "data/facilities.json"
     }
   }
 }
